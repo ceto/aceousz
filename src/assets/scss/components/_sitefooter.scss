@@ -1,0 +1,33 @@
+.sitefooter{
+    border-top: .75rem solid $primary-color;
+    background-color: $light-gray;
+    padding-top:2rem;
+    padding-bottom:2rem;
+
+    h3 {
+        color:$primary-color;
+        font-size:1.25rem;
+        margin:0 0 .5em;
+    }
+}
+
+.sitefooter__logo {
+    display: inline-block;
+    width:12rem;
+    max-width: 50vw;
+}
+
+
+.sitefooter__menu {
+    list-style: none;
+    margin-left:0;
+    > li {
+        margin-bottom: .5rem;
+    }
+    a {
+        color:inherit;
+        &:hover, &:focus {
+            color:$primary-color;
+        }
+    }
+}

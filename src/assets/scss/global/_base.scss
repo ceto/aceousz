@@ -1,0 +1,34 @@
+.main {
+    background-color: $xlight-gray;
+    background-image: linear-gradient(45deg, $medium-gray 0, transparent 50vh);
+    background-attachment: fixed;
+    padding: 4rem 0;
+}
+
+
+.button {
+    font-weight: $global-weight-bold;
+}
+table {
+    .button {
+        margin:0;
+    }
+
+    .truncate {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+table.lastcolcenter {
+    td:last-child() {
+        text-align: center;
+        width: min-content;
+    }
+}
+table.lastcolright {
+    td:last-child() {
+        text-align: right;
+    }
+}

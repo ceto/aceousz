@@ -1,0 +1,30 @@
+.pagetitle {
+    margin:0 0 2em;
+    &:before {
+        content: '';
+        width:.875em;
+        height:.875em;
+        display:inline-block;
+        background-color: $primary-color;
+        margin-right:.25em;
+    }
+}
+
+.has-lines {
+    text-align: center;
+    position: relative;
+
+    &:before, &:after {
+        position: absolute;
+        display: block;
+        content:'';
+        height: 1px;
+        width: calc(50% - 3rem);
+        border-bottom:1px solid $medium-gray;
+        top:50%;
+    }
+    &:after {
+        left:auto;
+        right:0;
+    }
+}

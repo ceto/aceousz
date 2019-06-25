@@ -37,70 +37,41 @@
 
     <main class="main" role="main">
       <div class="grid-container">
-        <div class="grid-x grid-margin-x">
-          <div class="large-12 cell">
-            <h1 class="pagetitle">Email továbbítók</h1>
-            <section class="settingblock">
-              <h2 class="sectiontitle">
-                Új e-mail továbbító létrehozása a(z) <span>tobias.fulop@operametlib.hu</span> címhez
-              </h2>
-              <form>
-                <label for="targetemail">E-mailek továbbítása az alábbi címre</label>
-                <div class="input-group">
-                  <input
-                    id="targetemail"
-                    name="targetemail"
-                    class="input-group-field"
-                    type="email"
-                    placeholder="Add meg a cél e-mail címet"
-                  />
-                  <div class="input-group-button">
-                    <input type="submit" class="button" value="Hozzáadom" />
-                  </div>
-                </div>
-                <input id="localcopy" type="checkbox" checked /><label for="localcopy">Lokális másolat maradjon</label>
-              </form>
-            </section>
+        <div class="grid-x grid-margin-x align-center">
+          <div class="medium-6 large-4 cell">
+            <h1 class="pagetitle">Bejelentkezés</h1>
+          <div class="callout">
+            <a href="#" class="button expanded">Facebook belépés</a>
+            <p class="has-lines">vagy</p>
+            <a href="#" class="button expanded">Google belépés</a>
+            <p class="has-lines">vagy</p>
+            <form data-abide novalidate>
       
-            <section class="settingblock">
-              <h2 class="sectiontitle">Aktív e-mail továbbítók</h2>
-              <table class="lastcolright hover unstriped">
-                <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>E-mail</th>
-                    <th>&nbsp;</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>info@asd.hu</td>
-                    <td><a href="#" class="button tiny">Törlés</a></td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>teleki@operametlib.hu</td>
-                    <td><a href="#" class="button tiny">Törlés</a></td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>johny.rotten@operametlib.hu</td>
-                    <td><a href="#" class="button tiny">Törlés</a></td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>tobias.muller@operametlib.hu</td>
-                    <td><a href="#" class="button tiny">Törlés</a></td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>info@asd.hu</td>
-                    <td><a href="#" class="button tiny">Törlés</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </section>
+              <div class="grid-x grid-margin-x">
+                <div class="cell">
+                  <label
+                    >E-mail
+                    <input type="text" required placeholder="Add meg e-mail címedet" />
+                  </label>
+                </div>
+                <div class="cell">
+                  <label
+                    >Jelszó
+                    <input type="password" required placeholder="Add meg jelszavadat" />
+                  </label>
+                </div>
+              </div>
+              <div class="grid-x grid-margin-x">
+                <div class="cell">
+                  <button class="button large expanded" type="submit" value="Submit">Belépés</button>
+                </div>
+              </div>
+            </form>
+            <p class="text-center">
+              <label>Még nem vagy tag? <a href="registration.html">Regisztrálj itt</a></label
+              ><small><a href="#">Elfelejtett jelszó</a></small>
+            </p>
+            </label>
           </div>
         </div>
       </div>

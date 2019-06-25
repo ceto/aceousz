@@ -1,0 +1,288 @@
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="large-12 cell">
+      <h1 class="pagetitle">Email fiók beállítása - <span>sepsi.szentgyorgy@acetelcom.net</span></h1>
+      <ul class="tabs" data-tabs id="email-tabs">
+        <li class="tabs-title"><a href="#passwordpanel">Jelszó visszaállítása</a></li>
+        <li class="tabs-title is-active">
+          <a href="#autorespondpanel" aria-selected="true">Auto responder</a>
+        </li>
+        <li class="tabs-title"><a href="#forwardpanel">Továbbítás</a></li>
+        <li class="tabs-title"><a href="#filterpanel">Szűrők</a></li>
+      </ul>
+      <div class="tabs-content" data-tabs-content="email-tabs">
+        <div class="tabs-panel" id="passwordpanel">
+          <div class="grid-x grid-margin-x medium-up-2">
+            <div class="cell">
+              <section class="settingblock">
+                <h2 class="sectiontitle">
+                  Jelszó visszaállítás a(z)
+                  <span>tobias.fulop@operametlib.hu</span> címhez
+                </h2>
+                <form>
+                  <label for="passwordresetemail">Értesítési email cím
+                    <input
+                      id="passwordresetemail"
+                      name="passwordresetemail"
+                      type="email"
+                      placeholder="Adja meg az értesítési email címet"
+                    />
+                  </labe>
+                      <input type="submit" class="button" value="Jelszó visszaállítás indítása" />
+
+                </form>
+              </section>
+            </div>
+            <div class="cell">
+                <section class="settingblock">
+                    <h2 class="sectiontitle">Tudnivalók</h2>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam quas, libero
+                    ratione eius rerum itaque sapiente quibusdam ipsa adipisci doloribus minima similique
+                    odio dolore amet veritatis eaque a ab?
+                    </p>
+                </section>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-panel is-active" id="autorespondpanel">
+          <section class="settingblock">
+            <h2 class="sectiontitle">Új automatikus válasz létrehozása/szerkesztése</h2>
+            <form>
+              <div class="grid-x grid-margin-x">
+                <div class="medium-6 cell">
+                  <label for="email"
+                    >Automatikus válasz az alábbi e-mail címhez
+                    <select name="email" id="email">
+                      <option value="0">Válasszon e-mail fiókot</option>
+                      <option value="1">assd@as.hu</option>
+                      <option value="2">teleki@aauma.as.hu</option>
+                      <option value="3">mano.istvan@defriblitas.edu</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="medium-6 cell">
+                  <div class="grid-x grid-margin-x">
+                    <div class="small-6 cell">
+                      <label for="datefrom">
+                        Időzítés ettől
+                        <input id="datefrom" name="datefrom" type="date"
+                      /></label>
+                    </div>
+                    <div class="small-6 cell">
+                      <label for="dateto">
+                        Időzítés eddig
+                        <input id="dateto" name="dateto" type="date"
+                      /></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label for="body"
+                >Auto válasz szövege
+                <textarea id="body" rows="3" placeholder="Adja meg az üzenet szövegét"></textarea
+              ></label>
+              <label for="autorepondstatus"
+                ><input id="autorespondstatus" type="checkbox" checked />Bekapcsolva</label
+              >
+              <input type="submit" class="button" value="Létrehoz/Módosít" />
+            </form>
+          </section>
+
+          <section class="settingblock">
+            <h2 class="sectiontitle">Aktív beállítások</h2>
+            <table class="lastcolright hover unstriped">
+              <thead>
+                <tr>
+                  <th>E-mail</th>
+                  <th>Dátum</th>
+                  <th>&nbsp;</th>
+                  <th>&nbsp;</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>info@asd.hu</td>
+                  <td>05/20 - 06/02</td>
+                  <td>
+                    Lorem ipsum dolor sit amet akarmi valami szöveg hosszan ezt a szöveget lehet
+                    megtörni hogy törjön hosszan
+                  </td>
+                  <td><a href="#" class="button tiny">Módosítás</a></td>
+                  <td><a href="#" class="button tiny">Törlés</a></td>
+                </tr>
+                <tr>
+                  <td>teleki@operametlib.hu</td>
+                  <td>05/20 - 06/02</td>
+                  <td>
+                    Lorem ipsum dolor sit amet akarmi valami szöveg hosszan ezt a szöveget lehet
+                    megtörni hogy törjön hosszan
+                  </td>
+                  <td><a href="#" class="button tiny">Módosítás</a></td>
+                  <td><a href="#" class="button tiny">Törlés</a></td>
+                </tr>
+                <tr>
+                  <td>johny.rotten@operametlib.hu</td>
+                  <td>05/20 - 06/02</td>
+                  <td>
+                    Lorem ipsum dolor sit amet akarmi valami szöveg hosszan ezt a szöveget lehet
+                    megtörni hogy törjön hosszan
+                  </td>
+                  <td><a href="#" class="button tiny">Módosítás</a></td>
+                  <td><a href="#" class="button tiny">Törlés</a></td>
+                </tr>
+                <tr>
+                  <td>tobias.muller@operametlib.hu</td>
+                  <td>05/20 - 06/02</td>
+                  <td>
+                    Lorem ipsum dolor sit amet akarmi valami szöveg hosszan ezt a szöveget lehet
+                    megtörni hogy törjön hosszan
+                  </td>
+                  <td><a href="#" class="button tiny">Módosítás</a></td>
+                  <td><a href="#" class="button tiny">Törlés</a></td>
+                </tr>
+                <tr>
+                  <td>info@asd.hu</td>
+                  <td>05/20 - 06/02</td>
+                  <td>
+                    Lorem ipsum dolor sit amet akarmi valami szöveg hosszan ezt a szöveget lehet
+                    megtörni hogy törjön hosszan
+                  </td>
+                  <td><a href="#" class="button tiny">Módosítás</a></td>
+                  <td><a href="#" class="button tiny">Törlés</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+        <div class="tabs-panel" id="forwardpanel">
+          <section class="settingblock">
+            <h2 class="sectiontitle">
+              Új e-mail továbbító létrehozása a(z) <span>tobias.fulop@operametlib.hu</span> címhez
+            </h2>
+            <form>
+              <label for="targetemail">E-mailek továbbítása az alábbi címre</label>
+              <div class="input-group">
+                <input
+                  id="targetemail"
+                  name="targetemail"
+                  class="input-group-field"
+                  type="email"
+                  placeholder="Add meg a cél e-mail címet"
+                />
+                <div class="input-group-button">
+                  <input type="submit" class="button" value="Hozzáadom" />
+                </div>
+              </div>
+              <label for="localcopy"
+                ><input id="localcopy" type="checkbox" checked />Lokális másolat maradjon</label
+              >
+            </form>
+          </section>
+          <section class="settingblock">
+            <h2 class="sectiontitle">Aktív e-mail továbbítók</h2>
+            <table class="lastcolright hover unstriped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>E-mail</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>info@asd.hu</td>
+                  <td><a href="#" class="button tiny">Törlés</a></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>teleki@operametlib.hu</td>
+                  <td><a href="#" class="button tiny">Törlés</a></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>johny.rotten@operametlib.hu</td>
+                  <td><a href="#" class="button tiny">Törlés</a></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>tobias.muller@operametlib.hu</td>
+                  <td><a href="#" class="button tiny">Törlés</a></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>info@asd.hu</td>
+                  <td><a href="#" class="button tiny">Törlés</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+        <div class="tabs-panel" id="filterpanel">
+                <section class="settingblock">
+                        <h2 class="sectiontitle">
+                          Új e-mail szűrő létrehozása a(z) <span>tobias.fulop@operametlib.hu</span> címhez
+                        </h2>
+                        <form>
+                          <label for="blockedemail">Emailek blokkolása az alábbi címről</label>
+                          <div class="input-group">
+                            <input
+                              id="blockedemail"
+                              name="blockedemail"
+                              class="input-group-field"
+                              type="email"
+                              placeholder="Add meg a blokkolandó e-mail címet"
+                            />
+                            <div class="input-group-button">
+                              <input type="submit" class="button" value="Hozzáadom" />
+                            </div>
+                          </div>
+                        </form>
+                      </section>
+                      <section class="settingblock">
+                        <h2 class="sectiontitle">Blokkolt feladók</h2>
+                        <table class="lastcolright hover unstriped">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>E-mail</th>
+                              <th>&nbsp;</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>info@asd.hu</td>
+                              <td><a href="#" class="button tiny">Törlés</a></td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>teleki@operametlib.hu</td>
+                              <td><a href="#" class="button tiny">Törlés</a></td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>johny.rotten@operametlib.hu</td>
+                              <td><a href="#" class="button tiny">Törlés</a></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>tobias.muller@operametlib.hu</td>
+                              <td><a href="#" class="button tiny">Törlés</a></td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>info@asd.hu</td>
+                              <td><a href="#" class="button tiny">Törlés</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </section>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

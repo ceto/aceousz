@@ -18,12 +18,34 @@
         </div>
         <div class="banner__controls">
           <nav class="banner__helpers">
+            <div class="banner__clientblock">
+              <select name="banner__clientselect" id="banner__clientselect">
+                <option value="">Elastic 2000 Kft.</option>
+                <option value="" selected>Tempura Trans Zrt.</option>
+                <option value="">Kovács Elek - magánszemély</option>
+                <option value="">Előfizetői hozzárendelés&hellip;</option>
+              </select>
+            </div>
             <ul class="banner__helpermenu">
-              <li><a href="#">Fiók kezelése</a></li>
-              <li><a href="#">Kijelentkezés</a></li>
+              <li><a href="#" data-toggle="usernav">Fiókom</a></li>
               <li><a href="#" class="accent">Segíthetünk?</a></li>
             </ul>
+            <div
+              class="dropdown-pane top small usernavpane"
+              id="usernav"
+              data-dropdown
+              data-hover="true"
+              data-hover-pane="true"
+            >
+              <ul class="usernavpane__menu">
+                <li><a href="#">Fiók kezelése</a></li>
+                <li><a href="#">Előfizető hozzárendelés</a></li>
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">Kijelentkezés</a></li>
+              </ul>
+            </div>
           </nav>
+    
           <nav class="banner__mainnav">
             <ul class="menu menu--main dropdown" data-dropdown-menu>
               <li>
@@ -133,7 +155,7 @@
         <div class="grid-x grid-margin-x grid-margin-y medium-up-2 large-up-4">
           <div class="cell">
             <a class="sitefooter__logo" href="#">
-              <img src="assets/img/logosimple.svg" alt="ACE Telecom" />
+              <img src="assets/img/logo.svg" alt="ACE Telecom" />
             </a>
           </div>
           <div class="cell">

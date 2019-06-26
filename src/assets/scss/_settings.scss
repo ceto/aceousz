@@ -264,7 +264,7 @@ $badge-font-size: 0.6rem;
 // 10. Breadcrumbs
 // ---------------
 
-$breadcrumbs-margin: 0 0 $global-margin 0;
+$breadcrumbs-margin: 0 0;
 $breadcrumbs-item-font-size: rem-calc(11);
 $breadcrumbs-item-color: $primary-color;
 $breadcrumbs-item-color-current: $black;
@@ -279,6 +279,14 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // 11. Button
 // ----------
 
+$button-palette: (
+    'primary': $primary-color,
+    'secondary': map-get($foundation-palette, 'secondary'),
+    'dark': $body-font-color,
+    'gray': $dark-gray,
+    'light': $light-gray,
+);
+
 $button-font-family: inherit;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
@@ -286,7 +294,7 @@ $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
-$button-color-alt: $black;
+$button-color-alt: $primary-color;
 $button-radius: $global-radius;
 $button-hollow-border-width: 1px;
 $button-sizes: (
@@ -295,7 +303,7 @@ $button-sizes: (
   default: 0.9rem,
   large: 1.25rem,
 );
-$button-palette: $foundation-palette;
+$button-palette: $button-palette;
 $button-opacity-disabled: 0.25;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
@@ -388,17 +396,17 @@ $dropdown-sizes: (
 // -----------------
 
 $dropdownmenu-arrows: true;
-$dropdownmenu-arrow-color: $anchor-color;
+$dropdownmenu-arrow-color: currentColor;
 $dropdownmenu-arrow-size: 6px;
 $dropdownmenu-arrow-padding: 1.5rem;
 $dropdownmenu-min-width: 200px;
 $dropdownmenu-background: null;
-$dropdownmenu-submenu-background: $white;
-$dropdownmenu-padding: $global-menu-padding;
+$dropdownmenu-submenu-background: rgba($primary-color, .95);
+$dropdownmenu-padding: .5em 1rem;
 $dropdownmenu-nested-margin: 0;
 $dropdownmenu-submenu-padding: $dropdownmenu-padding;
-$dropdownmenu-border: 1px solid $medium-gray;
-$dropdown-menu-item-color-active: get-color(primary);
+$dropdownmenu-border: 1px solid $primary-color;
+$dropdown-menu-item-color-active: inherit;
 $dropdown-menu-item-background-active: transparent;
 
 // 19. Flexbox Utilities

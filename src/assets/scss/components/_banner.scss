@@ -1,7 +1,6 @@
 .bannerwrap {
     background-color: #fff;
     border-bottom:1px solid $light-gray;
-    overflow-x: hidden;
 }
 
 .banner {
@@ -76,11 +75,6 @@
     width:100%;
     margin:0 0;
     background-color: $primary-color;
-    color:$white;
-    font-weight: $global-weight-bold;
-    a {
-        color:inherit;
-    }
     &:after {
         position: absolute;
         z-index:-1;

@@ -14,8 +14,16 @@
         </ul>
       </nav>
       <nav class="banner__mainnav">
-        <ul class="menu menu--main">
-          <li><a href="#">Szolgáltatások</a></li>
+        <ul class="menu menu--main dropdown" data-dropdown-menu>
+          <li>
+            <a href="#">Szolgáltatások</a>
+            <ul class="menu">
+              <li><a href="{{ root }}email-accounts.html">E-mail beállítása</a></li>
+              <li><a href="{{ root }}voip-log.html">Voip napló</a></li>
+              <li><a href="#">Tárhely</a></li>
+              <li><a href="#">Domain és DNS</a></li>
+            </ul>
+          </li>
           <li><a href="#">Cégadatok</a></li>
           <li><a href="#">Pénzügyek</a></li>
         </ul>

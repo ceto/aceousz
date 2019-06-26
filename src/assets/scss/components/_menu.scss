@@ -1,0 +1,33 @@
+.menu--main {
+    color:$white;
+    font-weight: $global-weight-bold;
+    li {
+        > a {
+            color:inherit;
+            &:hover, &:focus {
+                //color: inherit;
+            }
+        }
+    }
+
+    .is-dropdown-submenu {
+        padding-top:.333rem;
+        padding-bottom:.333rem;
+    }
+
+    &.dropdown .is-dropdown-submenu a {
+        font-size: .875rem;
+        font-weight: $global-weight-normal;
+        text-transform: uppercase;
+        border-bottom:1px solid transparent;
+        border-top:1px solid transparent;
+        &:hover, &:focus {
+            background-color: $primary-color;
+            //text-decoration: underline;
+            border-color: rgba($white, .125);
+        }
+    }
+    // &.dropdown > li.is-active > a {
+    //     color:inherit;
+    // }
+}

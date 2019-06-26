@@ -1,3 +1,19 @@
+html {
+    overflow-x: hidden;
+    @media screen and (min-width: 110em) {
+        font-size: 105.625%;
+        //font-size: 112.5%;
+    }
+
+    @media screen and (min-width: 128em) {
+        font-size: 112.5%;
+    }
+}
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
 .main {
     background-color: $xlight-gray;
     background-image: linear-gradient(45deg, $medium-gray 0, transparent 50vh);
@@ -11,7 +27,10 @@
 }
 table {
     .button {
-        margin:0;
+        margin:.25em 0;
+        & + button {
+
+        }
     }
 
     .truncate {
@@ -31,4 +50,11 @@ table.lastcolright {
     td:last-child() {
         text-align: right;
     }
+}
+
+
+.breadcrumbwrapper {
+    border-bottom:1px solid $light-gray;
+    //background-color: $xlight-gray;
+    padding:.5rem 0;
 }

@@ -1,14 +1,30 @@
+---
+disablebreadcrumb: true
+---
 <div class="grid-container">
   <div class="grid-x grid-margin-x align-center">
-    <div class="medium-6 large-4 cell">
+    <div class="medium-8 large-6 cell">
       <h1 class="pagetitle">Regisztráció</h1>
     <div class="callout">
-      <a href="#" class="button expanded">Regisztrácó Facebook fiókkal</a>
+      <a href="#" class="button dark small expanded">Regisztrácó Facebook fiókkal</a>
       <p class="has-lines">vagy</p>
-      <a href="#" class="button expanded">Regisztráció Google fiókkal</a>
+      <a href="#" class="button dark small expanded">Regisztráció Google fiókkal</a>
       <p class="has-lines">vagy</p>
       <form data-abide novalidate>
-
+        <div class="grid-x grid-margin-x small-up-2">
+            <div class="cell">
+                <label
+                    >Vezetéknév
+                    <input type="text" required placeholder="Kovács" />
+                </label>
+                </div>
+                <div class="cell">
+                <label
+                    >Keresztnév
+                    <input type="text" required placeholder="István" />
+                </label>
+            </div>
+         </div>
         <div class="grid-x grid-margin-x">
           <div class="cell">
             <label
@@ -16,22 +32,31 @@
               <input type="text" required placeholder="Add meg e-mail címedet" />
             </label>
           </div>
+        </div>
+        <div class="grid-x grid-margin-x small-up-2">
           <div class="cell">
             <label
               >Jelszó
               <input type="password" required placeholder="Add meg jelszavadat" />
             </label>
           </div>
+          <div class="cell">
+            <label
+              >Jelszó mégegyszer
+              <input type="password" required placeholder="Add meg jelszavadat" />
+            </label>
+          </div>
         </div>
+        <label for=""><input type="checkbox" required>Elfogadom az adatkezelési irányelveket</label>
         <div class="grid-x grid-margin-x">
           <div class="cell">
-            <button class="button large expanded" type="submit" value="Submit">Belépés</button>
+            <button class="button expanded" type="submit" value="Submit">Belépés</button>
           </div>
         </div>
       </form>
       <p class="text-center">
-        <label>Még nem vagy tag? <a href="{{ root }}registration.html">Regisztrálj itt</a></label
-        ><small><a href="#">Elfelejtett jelszó</a></small>
+        <label>Már korábban regisztráltál? <a href="{{ root }}login.html">Jelentkezz be itt</a></label
+        >
       </p>
       </label>
     </div>

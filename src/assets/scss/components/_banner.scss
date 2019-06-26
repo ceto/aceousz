@@ -16,6 +16,10 @@
     flex-shrink: 1;
     //padding-right:1rem;
     align-self: flex-end;
+    display: none;
+    @include breakpoint('medium') {
+        display: block;
+    }
 }
 
 .banner__logo {

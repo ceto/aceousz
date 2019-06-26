@@ -1,0 +1,13 @@
+.sitemap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:.5rem 0;
+    padding:0;
+
+
+    > li {
+        white-space: nowrap;
+        margin:0 1rem;
+    }
+}

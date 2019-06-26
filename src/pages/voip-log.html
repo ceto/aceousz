@@ -1,0 +1,138 @@
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="large-12 cell">
+      <h1 class="pagetitle">Voip</h1>
+      <section class="filterblock">
+        <h2 class="filterblock__title">Kimenő hívások szűrése</h2>
+        <div class="grid-x grid-margin-x small-up-2 medium-up-4 large-up-4 align-bottom">
+          <div class="cell">
+            <label for="logfilterdate"
+              >Hívások ebben az időszakban
+              <select name="logfilterdate" id="logfilterdate">
+                <option selected="selected" value="06|2019">2019 június</option>
+                <option value="05|2019">2019 május</option>
+                <option value="04|2019">2019 április</option>
+                <option value="03|2019">2019 március</option>
+                <option value="02|2019">2019 február</option>
+                <option value="01|2019">2019 január</option>
+              </select>
+            </label>
+          </div>
+          <div class="cell">
+            <label for="logfilterphonenem"
+              >Hívások erről a telefonszámról
+              <select name="logfilterphonenem" id="logfilterphonenem">
+                <option value="all" selected="selected">Minden kimenő hívás</option>
+                <option value="">+3697141252</option>
+                <option value="">+3691234002</option>
+                <option value="">+3691234777</option>
+                <option value="">+3678234602</option>
+                <option value="">+36231234552</option>
+                <option value="">+3691234002</option>
+              </select>
+            </label>
+          </div>
+          <div class="cell">
+            <label for="logfiltermellek"
+              >Szűrés mellékre
+              <select disabled name="logfiltermellek" id="logfiltermellek">
+                <option value="all" selected="selected">Minden mellék</option>
+                <option value="">+3697141252/45</option>
+                <option value="">+3697141252/46</option>
+                <option value="">+3697141252/47</option>
+                <option value="">+3697141252/48</option>
+              </select>
+            </label>
+          </div>
+          <div class="cell">
+            <label for="logfilterdeviceid"
+              >Készülék ID
+              <select disabled name="logfilterdeviceid" id="logfilterdeviceid">
+                <option value="all" selected="selected">Minden készülék</option>
+                <option value="">+3697141252/45</option>
+                <option value="">+3697141252/46</option>
+                <option value="">+3697141252/47</option>
+                <option value="">+3697141252/48</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <hr />
+        <h2 class="filterblock__title">Megjelenés és csoportosítás</h2>
+        <div class="filterblock__radiogroup">
+          <label for="pokemonRed"
+            ><input type="radio" name="pokemon" value="Red" id="pokemonRed" checked />Red
+            option</label
+          >
+          <label for="pokemonBlue"
+            ><input type="radio" name="pokemon" value="Blue" id="pokemonBlue" />Another option for
+            example blue</label
+          >
+          <label for="pokemonYellow"
+            ><input type="radio" name="pokemon" value="Yellow" id="pokemonYellow" />The third one
+            option namely yellow</label
+          >
+        </div>
+      </section>
+      <section class="settingblock">
+        <h2 class="sectiontitle">Hívásnapló</h2>
+        <div class="table-scroll">
+          <table class="hover unstriped">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Duration</th>
+                <th>Charge</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12-Aug-2019</td>
+                <td>19:21:05</td>
+                <td>+3670876234</td>
+                <td>+3691234002</td>
+                <td>12:02:25</td>
+                <td>€ 0.19</td>
+              </tr>
+              <tr>
+                <td>02-Jun-2019</td>
+                <td>18:24:31</td>
+                <td>+3691234002</td>
+                <td>+3670876234</td>
+                <td>00:02:91</td>
+                <td>€ 0.19</td>
+              </tr>
+              <tr>
+                <td>02-Jun-2019</td>
+                <td>13:54:25</td>
+                <td>+3670876234</td>
+                <td>+36213453155</td>
+                <td>03:02:23</td>
+                <td>€ 2.79</td>
+              </tr>
+              <tr>
+                <td>03-Jun-2019</td>
+                <td>12:04:15</td>
+                <td>+362313453015</td>
+                <td>+36213453155</td>
+                <td>00:02:73</td>
+                <td>€ 5.18</td>
+              </tr>
+              <tr>
+                <td>04-Jul-2019</td>
+                <td>13:10:25</td>
+                <td>+3670876234</td>
+                <td>+3670876234</td>
+                <td>00:02:57</td>
+                <td>€ 21.09</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

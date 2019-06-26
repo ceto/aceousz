@@ -1,0 +1,25 @@
+.filterblock {
+    margin:2rem auto;
+    background-color: $white;
+    border:1px solid $light-gray;
+    padding:2.5% 2.5%;
+    //color:$white;
+}
+
+.filterblock__title {
+    font-size:1.25rem;
+    margin:0 0 .5em;
+    //color:$primary-color;
+}
+
+.filterblock__radiogroup {
+    display: flex;
+    flex-wrap: wrap;
+
+    label {
+        margin-right:3%;
+        //white-space: nowrap;
+        //width: min-content;
+    }
+    
+}

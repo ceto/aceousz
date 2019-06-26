@@ -25,8 +25,16 @@
             </ul>
           </nav>
           <nav class="banner__mainnav">
-            <ul class="menu menu--main">
-              <li><a href="#">Szolgáltatások</a></li>
+            <ul class="menu menu--main dropdown" data-dropdown-menu>
+              <li>
+                <a href="#">Szolgáltatások</a>
+                <ul class="menu">
+                  <li><a href="email-accounts.html">E-mail beállítása</a></li>
+                  <li><a href="voip-log.html">Voip napló</a></li>
+                  <li><a href="#">Tárhely</a></li>
+                  <li><a href="#">Domain és DNS</a></li>
+                </ul>
+              </li>
               <li><a href="#">Cégadatok</a></li>
               <li><a href="#">Pénzügyek</a></li>
             </ul>
@@ -34,22 +42,32 @@
         </div>
       </section>
     </div>
-
+    <div class="breadcrumbwrapper">
+      <div class="grid-container">
+        <nav aria-label="You are here:" role="navigation">
+          <ul class="breadcrumbs">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="email-accounts.html">E-mail fiókok</a></li>
+            <li><span class="show-for-sr">Current: </span> E-mail beállítása</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <main class="main" role="main">
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
           <div class="large-12 cell">
             <h1 class="pagetitle">Email fiók beállítása - <span>sepsi.szentgyorgy@acetelcom.net</span></h1>
             <ul class="tabs" data-tabs id="email-tabs">
-              <li class="tabs-title"><a href="#passwordpanel">Jelszó visszaállítása</a></li>
-              <li class="tabs-title is-active">
+              <li class="tabs-title is-active"><a href="#passwordpanel">Jelszó visszaállítása</a></li>
+              <li class="tabs-title">
                 <a href="#autorespondpanel" aria-selected="true">Auto responder</a>
               </li>
               <li class="tabs-title"><a href="#forwardpanel">Továbbítás</a></li>
               <li class="tabs-title"><a href="#filterpanel">Szűrők</a></li>
             </ul>
             <div class="tabs-content" data-tabs-content="email-tabs">
-              <div class="tabs-panel" id="passwordpanel">
+              <div class="tabs-panel is-active" id="passwordpanel">
                 <div class="grid-x grid-margin-x medium-up-2">
                   <div class="cell">
                     <section class="settingblock">
@@ -83,7 +101,7 @@
                   </div>
                 </div>
               </div>
-              <div class="tabs-panel is-active" id="autorespondpanel">
+              <div class="tabs-panel" id="autorespondpanel">
                 <section class="settingblock">
                   <h2 class="sectiontitle">Új automatikus válasz létrehozása/szerkesztése</h2>
                   <form>
@@ -129,69 +147,80 @@
       
                 <section class="settingblock">
                   <h2 class="sectiontitle">Aktív beállítások</h2>
-                  <table class="lastcolright hover unstriped">
-                    <thead>
-                      <tr>
-                        <th>E-mail</th>
-                        <th>Dátum</th>
-                        <th>&nbsp;</th>
-                        <th>&nbsp;</th>
-                        <th>&nbsp;</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>info@asd.hu</td>
-                        <td>05/20 - 06/02</td>
-                        <td>
-                          Lorem ipsum dolor sit amet akarmi valami szöveg hosszan ezt a szöveget lehet
-                          megtörni hogy törjön hosszan
-                        </td>
-                        <td><a href="#" class="button tiny">Módosítás</a></td>
-                        <td><a href="#" class="button tiny">Törlés</a></td>
-                      </tr>
-                      <tr>
-                        <td>teleki@operametlib.hu</td>
-                        <td>05/20 - 06/02</td>
-                        <td>
-                          Lorem ipsum dolor sit amet akarmi valami szöveg hosszan ezt a szöveget lehet
-                          megtörni hogy törjön hosszan
-                        </td>
-                        <td><a href="#" class="button tiny">Módosítás</a></td>
-                        <td><a href="#" class="button tiny">Törlés</a></td>
-                      </tr>
-                      <tr>
-                        <td>johny.rotten@operametlib.hu</td>
-                        <td>05/20 - 06/02</td>
-                        <td>
-                          Lorem ipsum dolor sit amet akarmi valami szöveg hosszan ezt a szöveget lehet
-                          megtörni hogy törjön hosszan
-                        </td>
-                        <td><a href="#" class="button tiny">Módosítás</a></td>
-                        <td><a href="#" class="button tiny">Törlés</a></td>
-                      </tr>
-                      <tr>
-                        <td>tobias.muller@operametlib.hu</td>
-                        <td>05/20 - 06/02</td>
-                        <td>
-                          Lorem ipsum dolor sit amet akarmi valami szöveg hosszan ezt a szöveget lehet
-                          megtörni hogy törjön hosszan
-                        </td>
-                        <td><a href="#" class="button tiny">Módosítás</a></td>
-                        <td><a href="#" class="button tiny">Törlés</a></td>
-                      </tr>
-                      <tr>
-                        <td>info@asd.hu</td>
-                        <td>05/20 - 06/02</td>
-                        <td>
-                          Lorem ipsum dolor sit amet akarmi valami szöveg hosszan ezt a szöveget lehet
-                          megtörni hogy törjön hosszan
-                        </td>
-                        <td><a href="#" class="button tiny">Módosítás</a></td>
-                        <td><a href="#" class="button tiny">Törlés</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div class="table-scroll">
+                      <table class="lastcolright hover unstriped">
+                      <thead>
+                          <tr>
+                          <th>E-mail</th>
+                          <th>Dátum</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                          <td>info@asd.hu</td>
+                          <td>05/20 - 06/02</td>
+                          <td>
+                              Lorem ipsum dolor sit amet akarmi valami szöveg hosszan ezt a szöveget lehet
+                              megtörni hogy törjön hosszan
+                          </td>
+                          <td>
+                              <a href="#" class="button tiny expanded">Módosítás</a>
+                              <a href="#" class="button tiny light expanded">Törlés</a>
+                          </td>
+                          </tr>
+                          <tr>
+                          <td>teleki@operametlib.hu</td>
+                          <td>05/20 - 06/02</td>
+                          <td>
+                              Lorem ipsum dolor sit amet akarmi valami szöveg hosszan ezt a szöveget lehet
+                              megtörni hogy törjön hosszan
+                          </td>
+                          <td>
+                              <a href="#" class="button tiny expanded">Módosítás</a>
+                              <a href="#" class="button tiny light expanded">Törlés</a>
+                          </td>
+                          </tr>
+                          <tr>
+                          <td>johny.rotten@operametlib.hu</td>
+                          <td>05/20 - 06/02</td>
+                          <td>
+                              Lorem ipsum dolor sit amet akarmi valami szöveg hosszan ezt a szöveget lehet
+                              megtörni hogy törjön hosszan
+                          </td>
+                          <td>
+                              <a href="#" class="button tiny expanded">Módosítás</a>
+                              <a href="#" class="button tiny light expanded">Törlés</a>
+                          </td>
+                          </tr>
+                          <tr>
+                          <td>tobias.muller@operametlib.hu</td>
+                          <td>05/20 - 06/02</td>
+                          <td>
+                              Lorem ipsum dolor sit amet akarmi valami szöveg hosszan ezt a szöveget lehet
+                              megtörni hogy törjön hosszan
+                          </td>
+                          <td>
+                              <a href="#" class="button tiny expanded">Módosítás</a>
+                              <a href="#" class="button tiny gray expanded">Törlés</a>
+                          </td>
+                          </tr>
+                          <tr>
+                          <td>info@asd.hu</td>
+                          <td>05/20 - 06/02</td>
+                          <td>
+                              Lorem ipsum dolor sit amet akarmi valami szöveg hosszan ezt a szöveget lehet
+                              megtörni hogy törjön hosszan
+                          </td>
+                          <td>
+                              <a href="#" class="button tiny expanded">Módosítás</a>
+                              <a href="#" class="button tiny dark expanded">Törlés</a>
+                          </td>
+                          </tr>
+                      </tbody>
+                      </table>
+                  </div>
                 </section>
               </div>
               <div class="tabs-panel" id="forwardpanel">

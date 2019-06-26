@@ -25,8 +25,16 @@
             </ul>
           </nav>
           <nav class="banner__mainnav">
-            <ul class="menu menu--main">
-              <li><a href="#">Szolgáltatások</a></li>
+            <ul class="menu menu--main dropdown" data-dropdown-menu>
+              <li>
+                <a href="#">Szolgáltatások</a>
+                <ul class="menu">
+                  <li><a href="email-accounts.html">E-mail beállítása</a></li>
+                  <li><a href="voip-log.html">Voip napló</a></li>
+                  <li><a href="#">Tárhely</a></li>
+                  <li><a href="#">Domain és DNS</a></li>
+                </ul>
+              </li>
               <li><a href="#">Cégadatok</a></li>
               <li><a href="#">Pénzügyek</a></li>
             </ul>
@@ -34,7 +42,17 @@
         </div>
       </section>
     </div>
-
+    <div class="breadcrumbwrapper">
+      <div class="grid-container">
+        <nav aria-label="You are here:" role="navigation">
+          <ul class="breadcrumbs">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="email-accounts.html">E-mail fiókok</a></li>
+            <li><span class="show-for-sr">Current: </span> E-mail beállítása</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <main class="main" role="main">
       <div class="grid-container">
         <div class="grid-x grid-margin-x align-center">

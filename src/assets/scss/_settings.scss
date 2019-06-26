@@ -78,7 +78,7 @@ $foundation-palette: (
 $light-gray: #e6e6e6;$xlight-gray: #f6f6f6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
+$black: #333333;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
@@ -380,15 +380,15 @@ $drilldown-arrow-size: 6px;
 // 17. Dropdown
 // ------------
 
-$dropdown-padding: 1rem;
+$dropdown-padding: .5rem;
 $dropdown-background: $body-background;
-$dropdown-border: 1px solid $medium-gray;
-$dropdown-font-size: 1rem;
+$dropdown-border: 1px solid $light-gray;
+$dropdown-font-size: .875rem;
 $dropdown-width: 300px;
 $dropdown-radius: $global-radius;
 $dropdown-sizes: (
   tiny: 100px,
-  small: 200px,
+  small: 160px,
   large: 400px,
 );
 
@@ -441,7 +441,7 @@ $input-color: $black;
 $input-placeholder-color: $medium-gray;
 $input-font-family: inherit;
 $input-font-size: rem-calc(16);
-$input-font-weight: $global-weight-normal;
+$input-font-weight: $global-weight-bold;
 $input-line-height: $global-lineheight;
 $input-background: $white;
 $input-background-focus: $white;

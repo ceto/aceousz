@@ -26,6 +26,7 @@ body {
     font-weight: $global-weight-bold;
 }
 table {
+    font-size:.875rem;
     .button {
         margin:.25em 0;
         & + button {

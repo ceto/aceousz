@@ -6,14 +6,14 @@
 
     h3 {
         color:$primary-color;
-        font-size:1.25rem;
+        font-size:1.125rem;
         margin:0 0 .5em;
     }
 }
 
 .sitefooter__logo {
     display: inline-block;
-    width:12rem;
+    width:9rem;
     max-width: 50vw;
 }
 
@@ -21,8 +21,9 @@
 .sitefooter__menu {
     list-style: none;
     margin-left:0;
+    font-size:.75rem;
     > li {
-        margin-bottom: .5rem;
+        margin-bottom: .25em;
     }
     a {
         color:inherit;

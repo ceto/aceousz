@@ -19,7 +19,7 @@
 }
 
 .banner__logo {
-    width: 5.666rem;
+    width: 8.666rem;
     max-width: 20vw;
     display: inline-block;
     margin:0 1rem 5% 0;
@@ -30,7 +30,26 @@
     flex-wrap: wrap;
 }
 .banner__helpers {
-    margin-left:auto;
+    //margin-left:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:100%;
+}
+
+.banner__clientblock {
+    select {
+        font-size:.875rem;
+        margin: 0;
+        padding-top:.25em;
+        padding-bottom:.25em;
+        height:auto;
+        margin:.5rem 0 0;
+        //border-bottom-width: 0;
+
+        //background-color: $light-gray;
+
+    }
 }
 
 
@@ -52,6 +71,7 @@
         a {
             display: inline-block;
             color:inherit;
+            padding:.333em 0 .25em;
             &:hover, &:focus {
                 color:$primary-color;
             }

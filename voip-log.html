@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <div class="bannerwrap">
+      <section class="banner grid-container" role="banner">
+        <div class="banner__logosection">
+          <a class="banner__logo" href="index.html">
+            <img src="assets/img/logosimple.svg" alt="ACE Telecom" />
+          </a>
+        </div>
+        <div class="banner__controls">
+          <nav class="banner__helpers">
+            <ul class="banner__helpermenu">
+              <li><a href="#">Fiók kezelése</a></li>
+              <li><a href="#">Kijelentkezés</a></li>
+              <li><a href="#" class="accent">Segíthetünk?</a></li>
+            </ul>
+          </nav>
+          <nav class="banner__mainnav">
+            <ul class="menu menu--main dropdown" data-dropdown-menu>
+              <li>
+                <a href="#">Szolgáltatások</a>
+                <ul class="menu">
+                  <li><a href="email-accounts.html">E-mail beállítása</a></li>
+                  <li><a href="voip-log.html">Voip napló</a></li>
+                  <li><a href="#">Tárhely</a></li>
+                  <li><a href="#">Domain és DNS</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Cégadatok</a></li>
+              <li><a href="#">Pénzügyek</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </div>
+    <div class="breadcrumbwrapper">
+      <div class="grid-container">
+        <nav aria-label="You are here:" role="navigation">
+          <ul class="breadcrumbs">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="email-accounts.html">E-mail fiókok</a></li>
+            <li><span class="show-for-sr">Current: </span> E-mail beállítása</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <main class="main" role="main">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="large-12 cell">
+            <h1 class="pagetitle">Voip</h1>
+            <section class="filterblock">
+              <h2 class="filterblock__title">Kimenő hívások szűrése</h2>
+              <div class="grid-x grid-margin-x small-up-2 medium-up-4 large-up-4 align-bottom">
+                <div class="cell">
+                  <label for="logfilterdate"
+                    >Hívások ebben az időszakban
+                    <select name="logfilterdate" id="logfilterdate">
+                      <option selected="selected" value="06|2019">2019 június</option>
+                      <option value="05|2019">2019 május</option>
+                      <option value="04|2019">2019 április</option>
+                      <option value="03|2019">2019 március</option>
+                      <option value="02|2019">2019 február</option>
+                      <option value="01|2019">2019 január</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="cell">
+                  <label for="logfilterphonenem"
+                    >Hívások erről a telefonszámról
+                    <select name="logfilterphonenem" id="logfilterphonenem">
+                      <option value="all" selected="selected">Minden kimenő hívás</option>
+                      <option value="">+3697141252</option>
+                      <option value="">+3691234002</option>
+                      <option value="">+3691234777</option>
+                      <option value="">+3678234602</option>
+                      <option value="">+36231234552</option>
+                      <option value="">+3691234002</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="cell">
+                  <label for="logfiltermellek"
+                    >Szűrés mellékre
+                    <select disabled name="logfiltermellek" id="logfiltermellek">
+                      <option value="all" selected="selected">Minden mellék</option>
+                      <option value="">+3697141252/45</option>
+                      <option value="">+3697141252/46</option>
+                      <option value="">+3697141252/47</option>
+                      <option value="">+3697141252/48</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="cell">
+                  <label for="logfilterdeviceid"
+                    >Készülék ID
+                    <select disabled name="logfilterdeviceid" id="logfilterdeviceid">
+                      <option value="all" selected="selected">Minden készülék</option>
+                      <option value="">+3697141252/45</option>
+                      <option value="">+3697141252/46</option>
+                      <option value="">+3697141252/47</option>
+                      <option value="">+3697141252/48</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <hr />
+              <h2 class="filterblock__title">Megjelenés és csoportosítás</h2>
+              <div class="filterblock__radiogroup">
+                <label for="pokemonRed"
+                  ><input type="radio" name="pokemon" value="Red" id="pokemonRed" checked />Red
+                  option</label
+                >
+                <label for="pokemonBlue"
+                  ><input type="radio" name="pokemon" value="Blue" id="pokemonBlue" />Another option for
+                  example blue</label
+                >
+                <label for="pokemonYellow"
+                  ><input type="radio" name="pokemon" value="Yellow" id="pokemonYellow" />The third one
+                  option namely yellow</label
+                >
+              </div>
+            </section>
+            <section class="settingblock">
+              <h2 class="sectiontitle">Hívásnapló</h2>
+              <div class="table-scroll">
+                <table class="hover unstriped">
+                  <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>Time</th>
+                      <th>From</th>
+                      <th>To</th>
+                      <th>Duration</th>
+                      <th>Charge</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>12-Aug-2019</td>
+                      <td>19:21:05</td>
+                      <td>+3670876234</td>
+                      <td>+3691234002</td>
+                      <td>12:02:25</td>
+                      <td>€ 0.19</td>
+                    </tr>
+                    <tr>
+                      <td>02-Jun-2019</td>
+                      <td>18:24:31</td>
+                      <td>+3691234002</td>
+                      <td>+3670876234</td>
+                      <td>00:02:91</td>
+                      <td>€ 0.19</td>
+                    </tr>
+                    <tr>
+                      <td>02-Jun-2019</td>
+                      <td>13:54:25</td>
+                      <td>+3670876234</td>
+                      <td>+36213453155</td>
+                      <td>03:02:23</td>
+                      <td>€ 2.79</td>
+                    </tr>
+                    <tr>
+                      <td>03-Jun-2019</td>
+                      <td>12:04:15</td>
+                      <td>+362313453015</td>
+                      <td>+36213453155</td>
+                      <td>00:02:73</td>
+                      <td>€ 5.18</td>
+                    </tr>
+                    <tr>
+                      <td>04-Jul-2019</td>
+                      <td>13:10:25</td>
+                      <td>+3670876234</td>
+                      <td>+3670876234</td>
+                      <td>00:02:57</td>
+                      <td>€ 21.09</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    <footer class="sitefooter" role="contentinfo">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x grid-margin-y medium-up-2 large-up-4">
+          <div class="cell">
+            <a class="sitefooter__logo" href="#">
+              <img src="assets/img/logosimple.svg" alt="ACE Telecom" />
+            </a>
+          </div>
+          <div class="cell">
+            <h3>Kapcsolat</h3>
+            <ul class="sitefooter__menu">
+              <li><a href="#">Elérhetőségek</a></li>
+              <li><a href="#">Webmail</a></li>
+              <li><a href="#">Online ügyfélszolgálat</a></li>
+            </ul>
+          </div>
+          <div class="cell">
+            <h3>Általános információk</h3>
+            <ul class="sitefooter__menu">
+              <li><a href="#">Általános szerződési Feltételek</a></li>
+              <li><a href="#">Dokumentumok</a></li>
+              <li><a href="#">Hálózati minőség célértékek</a></li>
+              <li><a href="#">Biztonságos internethasználat</a></li>
+              <li><a href="#">Adatkezelési és jogi nyilatkozat</a></li>
+            </ul>
+          </div>
+          <div class="cell">
+            <h3>Az ACE Telecomról</h3>
+            <ul class="sitefooter__menu">
+              <li><a href="#">Rólunk</a></li>
+              <li><a href="#">Cégadatok</a></li>
+              <li><a href="#">Infrastruktúra</a></li>
+              <li><a href="#">Impresszum</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell">
+            <ol class="sitemap">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="email-accounts.html">Email accounts</a></li>
+              <li><a href="email-account-settings.html">Email account settings</a></li>
+              <li><a href="voip-log.html">Voip logs</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

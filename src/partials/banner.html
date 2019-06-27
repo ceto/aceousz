@@ -7,6 +7,7 @@
     </div>
     <div class="banner__controls">
       <nav class="banner__helpers">
+        {{#if loggedin}}
         <div class="banner__clientblock">
           <select name="banner__clientselect" id="banner__clientselect">
             <option value="">Elastic 2000 Kft.</option>
@@ -15,9 +16,18 @@
             <option value="">Előfizetői hozzárendelés&hellip;</option>
           </select>
         </div>
+        {{/if}}
         <ul class="banner__helpermenu">
+          {{#if loggedin}}
           <li><a href="#" data-toggle="usernav">Fiók kezelése</a></li>
           <li><a href="#">Kijelentkezés</a></li>
+          {{else}}
+          <li><a href="#">Vállalati</a></li>
+          <li><a href="#">Lakossági</a></li>
+          <li><a href="#">Viszonteladók</a></li>
+          <li><a href="#">Partnerek</a></li>
+          {{/if}}
+
           <li><a href="#" class="accent">Segíthetünk?</a></li>
         </ul>
         <div
@@ -38,6 +48,7 @@
 
       <nav class="banner__mainnav">
         <ul class="menu menu--main dropdown" data-dropdown-menu>
+          {{#if loggedin}}
           <li>
             <a href="#">Szolgáltatások</a>
             <ul class="menu">
@@ -47,6 +58,11 @@
           </li>
           <li><a href="#">Cégadatok</a></li>
           <li><a href="#">Pénzügyek</a></li>
+          {{else}}
+          <li>
+            <a href="{{ root }}login.html">Online Ügyfélszolgálat | Bejelentkezés szükséges</a>
+          </li>
+          {{/if}}
         </ul>
       </nav>
     </div>

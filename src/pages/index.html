@@ -1,19 +1,49 @@
-<div class="grid-container">
-  <div class="grid-x grid-margin-x align-center">
-    <div class="medium-8 large-6 cell">
-      <h1 class="pagetitle">ACE Telecom Online ügyfélszolgálat</h1>
-      <p class="lead">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laudantium quam voluptas
-        id, asperiores dolorum aliquid odit numquam natus et dolores?
+---
+mainclass: main--nopad
+disablebreadcrumb: true
+---
+
+<section id="hero" data-magellan-target="hero" class="hero">
+  <div class="hero__content">
+    <div class="grid-container">
+      <div class="hero__titlewrap">
+        <h1 class="hero__title">Lorem ipsum üzenet eleje jöhet ide lényeges</h1>
+      </div>
+      <h2 class="hero__subtitle">Meg még valami szöveg kicsiben</h2>
+      <p class="hero__lead">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ad sit nihil. Lorem ipsum dolor
+        sit amet consectetur eum?
       </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae iste vero quis
-        mollitia dolorem dicta aliquam esse hic perspiciatis, at amet, fugiat, in id debitis natus!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae iste vero quis
-        mollitia dolorem dicta aliquam esse hic perspiciatis, at amet, fugiat, in id debitis natus!
+      <p class="hero__addition">
+        <a target="_blank" href="#">Regisztráció indítása</a>
       </p>
     </div>
   </div>
-</div>
+  <figure class="hero__fig">
+    <img
+      width="1920"
+      height="922"
+      src="https://acetelecom.hu:5500/images/5c8f8ddbd02cf9199eeee8db"
+      alt="Online Ügyfélszolgálat"
+    />
+  </figure>
+  <!-- <div class="hero__bottomcontainer">
+    <div class="grid-container text-center">
+      <p class="hero__bottom"><em>Online Ügyfélszolgálat is</em><br />Under Construction</p>
+    </div>
+  </div> -->
+  <div class="hero__calloutcontainer">
+    <div class="grid-container">
+      <div class="hero__callout">
+        <header class="hero__callout__head">
+          <p>
+            <small>Online ügyfélszolgálat</small><br />
+            <strong class="accent">Bejelentkezés</strong>
+          </p>
+          <hr class="superlinea small light" />
+        </header>
+        {{> loginbox }}
+      </div>
+    </div>
+  </div>
+</section>

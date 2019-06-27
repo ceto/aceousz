@@ -1,18 +1,23 @@
 .pagetitle {
     margin:0 0 2em;
-    &:before {
-        content: '';
-        width:.875em;
-        height:.875em;
-        display:inline-block;
-        background-color: $primary-color;
-        margin-right:.25em;
-    }
+    color:$primary-color;
+    // &:before {
+    //     content: '';
+    //     width:.875em;
+    //     height:.875em;
+    //     display:inline-block;
+    //     background-color: $primary-color;
+    //     margin-right:.25em;
+    // }
 }
 
 .has-lines {
     text-align: center;
     position: relative;
+    font-weight: $global-weight-normal;
+    line-height: 1 !important;
+    font-size:.875em;
+    margin:.875em 0;
 
     &:before, &:after {
         position: absolute;

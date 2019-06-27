@@ -69,7 +69,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #E36B2B,
+  primary: #f47422,
   secondary: #23a40f,
   success: #3adb76,
   warning: #ffae00,
@@ -109,11 +109,12 @@ $breakpoints: (
   small: 0,
   medium: 640px,
   large: 1024px,
+  tablet: 768px,
   xlarge: 1200px,
   xxlarge: 1440px,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small medium tablet large xlarge);
 
 // 3. The Grid
 // -----------
@@ -402,7 +403,7 @@ $dropdownmenu-arrow-padding: 1.5rem;
 $dropdownmenu-min-width: 200px;
 $dropdownmenu-background: null;
 $dropdownmenu-submenu-background: rgba($primary-color, .95);
-$dropdownmenu-padding: .5em 1rem;
+$dropdownmenu-padding: .5666em 1rem;
 $dropdownmenu-nested-margin: 0;
 $dropdownmenu-submenu-padding: $dropdownmenu-padding;
 $dropdownmenu-border: 1px solid $primary-color;
@@ -435,7 +436,7 @@ $form-label-font-size: rem-calc(14);
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: 1.8;
 $select-background: $white;
-$select-triangle-color: $dark-gray;
+$select-triangle-color: $primary-color;
 $select-radius: $global-radius;
 $input-color: $black;
 $input-placeholder-color: $medium-gray;

@@ -20,7 +20,9 @@ body {
     background-attachment: fixed;
     padding: 4rem 0;
 }
-
+.main--nopad {
+    padding:0;
+}
 
 .button {
     font-weight: $global-weight-bold;

@@ -30,6 +30,7 @@
 
           <li><a href="#" class="accent">Segíthetünk?</a></li>
         </ul>
+        {{#if loggedin}}
         <div
           class="dropdown-pane top small usernavpane"
           id="usernav"
@@ -44,6 +45,7 @@
             <li><a href="#">Kijelentkezés</a></li>
           </ul>
         </div>
+        {{/if}}
       </nav>
 
       <nav class="banner__mainnav">

@@ -16,7 +16,7 @@ disablebreadcrumb: true
         sit amet consectetur eum?
       </p>
       <p class="hero__addition">
-        <a target="_blank" href="#">Regisztráció indítása</a>
+        <a href="{{ root }}dashboard.html">Lorem ipsum dolor</a>
       </p>
     </div>
   </div>
@@ -33,18 +33,19 @@ disablebreadcrumb: true
       <p class="hero__bottom"><em>Online Ügyfélszolgálat is</em><br />Under Construction</p>
     </div>
   </div> -->
-  <div class="hero__calloutcontainer">
+  <!-- <div class="hero__calloutcontainer">
     <div class="grid-container">
       <div class="hero__callout">
-        <header class="hero__callout__head">
-          <p>
-            <small>Online ügyfélszolgálat</small><br />
-            <strong class="accent">Bejelentkezés</strong>
-          </p>
-          <hr class="superlinea small light" />
-        </header>
         {{> loginbox }}
       </div>
     </div>
-  </div>
+  </div> -->
 </section>
+
+<div class="grid-container">
+  <div class="grid-x grid-margin-x align-center">
+    <div class="cell medium-6 large-4">
+      {{> loginbox }}
+    </div>
+  </div>
+</div>

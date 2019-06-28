@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="{{ root }}assets/css/app.css" />
   </head>
   <body class="{{ bodyclass }}">
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=1801231636785994&autoLogAppEvents=1"
+    ></script>
     {{> banner }}
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
     <main class="main {{ mainclass }}" role="main">

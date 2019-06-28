@@ -63,8 +63,12 @@ table.lastcolright {
 }
 
 .button {
+    //position: relative;
     img {
-        width: 1.25em;
+        width: 1em;
         margin-right:.5em;
+        //position: relative;
+        //left:-.5em;
+        //top:-.125em;
     }
 }

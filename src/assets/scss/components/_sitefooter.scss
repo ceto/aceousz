@@ -21,7 +21,7 @@
 .sitefooter__menu {
     list-style: none;
     margin-left:0;
-    font-size:.75rem;
+    font-size:.875rem;
     > li {
         margin-bottom: .25em;
     }
@@ -29,6 +29,25 @@
         color:inherit;
         &:hover, &:focus {
             color:$primary-color;
+        }
+    }
+}
+
+
+.sitefooter__socialmenu {
+    // width:9rem;
+    // max-width: 50vw;
+    list-style: none;
+    display: flex;
+    //justify-items: center;
+    //justify-content: center;
+    margin:1rem 0 1rem;
+    > li {
+        width: 1.5rem;
+        display: block;
+        margin-right: .25rem;
+        img {
+            width: inherit;
         }
     }
 }

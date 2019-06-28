@@ -6,6 +6,7 @@
 .banner {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding-bottom:.333rem;
     padding-top:0;
 
@@ -34,6 +35,13 @@
     flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
+}
+.banner__mobilemenu {
+    display: none;
+    a {
+        margin:0;
+        @include hamburger();
+    }
 }
 .banner__helpers {
     //margin-left:auto;
@@ -126,12 +134,28 @@
         padding-bottom:.5rem;
         padding-top:.875rem;
     }
-
+    .banner__logosection {
+        display: block;
+        @include breakpoint('medium') {
+            display: block;
+        }
+    }
     .banner__logo {
         width: 9.5rem;
-        max-width: 20vw;
-        display: inline-block;
         margin:0 .5rem .125rem 0;
+    }
+    .banner__controls {
+        display: none;
+
+        @include breakpoint('tablet') {
+            display: flex;
+        }
+    }
+    .banner__mobilemenu {
+        display: block;
+        @include breakpoint('tablet') {
+            display: none;
+        }
     }
 
     .banner__helpermenu {
@@ -140,11 +164,12 @@
         > li {
             a {
                 //padding:0 .5em;
-                padding: 0 .875em;
+                padding: 0 .666em;
                 &:hover, &:focus {
                     text-decoration: underline;
                 }
             }
         }
     }
+
 }

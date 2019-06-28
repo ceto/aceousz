@@ -72,3 +72,23 @@ table.lastcolright {
         //top:-.125em;
     }
 }
+
+/* Stílusvariáció az original site alapján */
+.originalsite {
+
+    html {
+        overflow-x: hidden;
+        @media screen and (min-width: 110em) {
+            font-size: 100%;
+            //font-size: 112.5%;
+        }
+    
+        @media screen and (min-width: 128em) {
+            font-size: 100%;
+        }
+    }
+
+    .grid-container {
+        max-width: 976px;
+    }
+}

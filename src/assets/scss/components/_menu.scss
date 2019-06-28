@@ -33,3 +33,18 @@
     //     color:inherit;
     // }
 }
+
+/* Stílusvariáció az original site alapján */
+.originalsite {
+    .menu--main {
+        font-weight: $global-weight-normal;
+        font-size:.8125rem;
+        
+        li {
+            > a {
+                padding-top:1.125em;
+                padding-bottom:1.125em;
+            }
+        }
+    }
+}

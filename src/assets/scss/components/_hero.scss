@@ -146,6 +146,10 @@
     &--nocolor {
         background-color: $body-font-color;
     }
+
+    .originalsite & {
+        font-size: 2.5rem;
+    }
 }
 
 .hero__subtitle {
@@ -314,4 +318,27 @@
 
 .hero__callout__head {
     margin-bottom: 1rem;
+}
+
+
+/* Stílusvariáció az original site alapján */
+.originalsite {
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        @include breakpoint(tablet) {
+            height: 36rem;
+        }
+        @include breakpoint(large) {
+            height: 33rem;
+        }
+        @include breakpoint(xlarge) {
+            height: 33rem;
+        }
+        @include breakpoint(xxlarge) {
+            height: 33rem;
+        }
+    }
 }

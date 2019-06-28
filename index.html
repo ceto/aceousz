@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="assets/css/app.css" />
   </head>
   <body class="">
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=1801231636785994&autoLogAppEvents=1"
+    ></script>
     <div class="bannerwrap">
       <section class="banner grid-container" role="banner">
         <div class="banner__logosection">
@@ -66,7 +73,7 @@
               sit amet consectetur eum?
             </p>
             <p class="hero__addition">
-              <a target="_blank" href="#">Regisztráció indítása</a>
+              <a href="dashboard.html">Lorem ipsum dolor</a>
             </p>
           </div>
         </div>
@@ -83,23 +90,16 @@
             <p class="hero__bottom"><em>Online Ügyfélszolgálat is</em><br />Under Construction</p>
           </div>
         </div> -->
-        <div class="hero__calloutcontainer">
+        <!-- <div class="hero__calloutcontainer">
           <div class="grid-container">
             <div class="hero__callout">
-              <header class="hero__callout__head">
-                <p>
-                  <small>Online ügyfélszolgálat</small><br />
-                  <strong class="accent">Bejelentkezés</strong>
-                </p>
-                <hr class="superlinea small light" />
-              </header>
-              
-                  <a href="#" class="button colorfb dark small expanded">Facebook belépés</a>
+              <aside class="loginbox">
+                  <h2 class="loginbox__title">Bejelentkezés</h2>
+                  <a href="#" class="button fb small expanded"><img src="assets/img/facebook.svg">Facebook belépés</a>    
                   <p class="has-lines">vagy</p>
-                  <a href="#" class="button colorgoogle dark small expanded">Google belépés</a>
+                  <a href="#" class="button google small expanded"><img src="assets/img/google.svg">Google belépés</a>
                   <p class="has-lines">vagy</p>
                   <form data-abide novalidate>
-              
                     <div class="grid-x grid-margin-x">
                       <div class="cell">
                         <label
@@ -116,19 +116,60 @@
                     </div>
                     <div class="grid-x grid-margin-x">
                       <div class="cell">
-                        <button class="button expanded" type="submit" value="Submit">Belépés</button>
+                        <button class="button expanded secondary" type="submit" value="Submit">Belépés</button>
                       </div>
                     </div>
                   </form>
                   <p class="text-center">
-                    <label>Még nem vagy tag? <a href="registration.html">Regisztrálj itt</a></label
+                    <label>Még nincs fókod? <a href="registration.html">Regisztrálj itt</a></label
                     ><small><a href="#">Elfelejtett jelszó</a></small>
                   </p>
                   </label>
+              </aside>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
+      
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x align-center">
+          <div class="cell medium-6 large-4">
+            <aside class="loginbox">
+                <h2 class="loginbox__title">Bejelentkezés</h2>
+                <a href="#" class="button fb small expanded"><img src="assets/img/facebook.svg">Facebook belépés</a>    
+                <p class="has-lines">vagy</p>
+                <a href="#" class="button google small expanded"><img src="assets/img/google.svg">Google belépés</a>
+                <p class="has-lines">vagy</p>
+                <form data-abide novalidate>
+                  <div class="grid-x grid-margin-x">
+                    <div class="cell">
+                      <label
+                        >E-mail
+                        <input type="text" required placeholder="Add meg e-mail címedet" />
+                      </label>
+                    </div>
+                    <div class="cell">
+                      <label
+                        >Jelszó
+                        <input type="password" required placeholder="Add meg jelszavadat" />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid-x grid-margin-x">
+                    <div class="cell">
+                      <button class="button expanded secondary" type="submit" value="Submit">Belépés</button>
+                    </div>
+                  </div>
+                </form>
+                <p class="text-center">
+                  <label>Még nincs fókod? <a href="registration.html">Regisztrálj itt</a></label
+                  ><small><a href="#">Elfelejtett jelszó</a></small>
+                </p>
+                </label>
+            </aside>
+          </div>
+        </div>
+      </div>
       
     </main>
     <footer class="sitefooter" role="contentinfo">

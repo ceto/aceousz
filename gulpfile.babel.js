@@ -33,10 +33,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
-gulp.task(
-  "build",
-  gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sass, styleGuide)
-);
+gulp.task("build", gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sass, styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task("default", gulp.series("build", server, watch));
@@ -102,7 +99,10 @@ function styleGuide(done) {
 function sass() {
   const postCssPlugins = [
     // Autoprefixer
-    autoprefixer({ browsers: COMPATIBILITY })
+    autoprefixer({
+      overrideBrowserslist: COMPATIBILITY
+      //browsers: COMPATIBILITY
+    })
 
     // UnCSS - Uncomment to remove unused styles in production
     // PRODUCTION && uncss.postcssPlugin(UNCSS_OPTIONS),
@@ -192,12 +192,8 @@ function reload(done) {
 function watch() {
   gulp.watch(PATHS.assets, copy);
   gulp.watch("src/pages/**/*.html").on("all", gulp.series(pages, browser.reload));
-  gulp
-    .watch("src/{layouts,partials}/**/*.html")
-    .on("all", gulp.series(resetPages, pages, browser.reload));
-  gulp
-    .watch("src/data/**/*.{js,json,yml}")
-    .on("all", gulp.series(resetPages, pages, browser.reload));
+  gulp.watch("src/{layouts,partials}/**/*.html").on("all", gulp.series(resetPages, pages, browser.reload));
+  gulp.watch("src/data/**/*.{js,json,yml}").on("all", gulp.series(resetPages, pages, browser.reload));
   gulp.watch("src/helpers/**/*.js").on("all", gulp.series(resetPages, pages, browser.reload));
   gulp.watch("src/assets/scss/**/*.scss").on("all", sass);
   gulp.watch("src/assets/js/**/*.js").on("all", gulp.series(javascript, browser.reload));

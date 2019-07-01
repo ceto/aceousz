@@ -1,14 +1,6 @@
 .pagetitle {
-    margin:0 0 .875em;
-    color:$primary-color;
-    // &:before {
-    //     content: '';
-    //     width:.875em;
-    //     height:.875em;
-    //     display:inline-block;
-    //     background-color: $primary-color;
-    //     margin-right:.25em;
-    // }
+    margin: 0 0 0.875em;
+    color: $primary-color;
 }
 
 .has-lines {
@@ -16,28 +8,22 @@
     position: relative;
     font-weight: $global-weight-normal;
     line-height: 1 !important;
-    font-size:.875em;
-    margin:.875em 0;
+    font-size: 0.875em;
+    margin: 0.875em 0;
 
-    &:before, &:after {
+    &::before,
+    &::after {
         position: absolute;
         display: block;
-        content:'';
+        content: "";
         height: 1px;
         width: calc(50% - 3rem);
-        border-bottom:1px solid $medium-gray;
-        top:50%;
+        border-bottom: 1px solid $medium-gray;
+        top: 50%;
     }
-    &:after {
-        left:auto;
-        right:0;
+
+    &::after {
+        left: auto;
+        right: 0;
     }
-}
-
-.lead, p.lead {
-    font-weight: $global-weight-bold;
-}
-
-.tabs-title > a {
-    //font-weight: $global-weight-bold;
 }

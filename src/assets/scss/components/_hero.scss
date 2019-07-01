@@ -2,25 +2,27 @@
     position: relative;
     width: 100%;
     color: $primary-color;
-    //border-top:1px solid $xlight-gray;
-    //border-bottom: 1px solid $light-gray;
-    background-color: lighten(#000,80%);
+    background-color: lighten(#000, 80%);
+
     @include breakpoint(tablet) {
         height: 36rem;
     }
+
     @include breakpoint(large) {
         height: 38rem;
     }
+
     @include breakpoint(xlarge) {
         height: 36rem;
     }
+
     @include breakpoint(xxlarge) {
         height: 40rem;
     }
 
     & + * {
-        padding-top:4rem;
-        padding-bottom:4rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 }
 
@@ -28,9 +30,11 @@
     @include breakpoint(tablet) {
         height: 36rem;
     }
+
     @include breakpoint(large) {
         height: calc(100vh - 8.5rem);
     }
+
     @include breakpoint(xlarge) {
         height: calc(100vh - 7.5rem);
     }
@@ -38,35 +42,34 @@
 
 .hero__content {
     position: relative;
-    font-size:.875rem;
-    padding:calc(4rem + 4vw) 0;
+    font-size: 0.875rem;
+    padding: calc(4rem + 4vw) 0;
     z-index: 2;
-    background-color: rgba(#000,.25);
+    background-color: rgba(#000, 0.25);
     background-size: cover;
     background-position: top center;
 
     @include breakpoint(tablet) {
         background-color: transparent;
-        padding:0;
+        padding: 0;
         background-image: none;
         position: absolute;
         z-index: 2;
         top: 50%;
-        left:0;
-        width:100%;
+        left: 0;
+        width: 100%;
         transform: translateY(-50%);
     }
+
     @include breakpoint(large) {
-        font-size:1rem;
-    }
-    @include breakpoint(xlarge) {
-        //font-size:1.125rem;
+        font-size: 1rem;
     }
 
     > .grid-container {
         @include breakpoint(tablet) {
             padding-right: 24rem;
         }
+
         & > * {
             @include breakpoint(tablet) {
                 max-width: 50rem;
@@ -78,9 +81,9 @@
 .hero__content--centered {
     top: 50%;
     bottom: auto;
-
     transform: translateY(-50%);
     text-align: center;
+
     .hero__title,
     .hero__subtitle,
     .hero__lead {
@@ -88,16 +91,18 @@
         margin-left: auto;
     }
 }
+
 .hero__fig {
     position: absolute;
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     z-index: 0;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     background-color: inherit;
+
     img {
         display: block;
         width: 100%;
@@ -108,41 +113,42 @@
         mix-blend-mode: multiply;
     }
 
-    &:after {
+    &::after {
         display: block;
         position: absolute;
-        content:'';
-        left:0;
-        top:0;
+        content: "";
+        left: 0;
+        top: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(#000,.5);
+        background-color: rgba(#000, 0.5);
     }
 
     @supports (mix-blend-mode: multiply) {
-        &:after {
-            display:none;
+        &::after {
+            display: none;
         }
     }
-
-
 }
+
 .hero__titlewrap {
-    margin-bottom:.5rem;
+    margin-bottom: 0.5rem;
 }
+
 .hero__title {
     font-size: 3.25em;
     font-weight: $global-weight-bold;
     margin: 0 0;
     box-decoration-break: clone;
-    background-color: rgba(#000,.6);
+    background-color: rgba(#000, 0.6);
     display: inline;
     line-height: 1.4666;
-    padding-left:.333em;
-    padding-right:.333em;
-    padding-top:.1333em;
-    padding-bottom:.1333em;
+    padding-left: 0.333em;
+    padding-right: 0.333em;
+    padding-top: 0.1333em;
+    padding-bottom: 0.1333em;
     text-transform: uppercase;
+
     &--nocolor {
         background-color: $body-font-color;
     }
@@ -157,19 +163,21 @@
     font-weight: $global-weight-bold;
     line-height: 1.2;
     box-decoration-break: clone;
-    background-color: rgba(#000,.6);
+    background-color: rgba(#000, 0.6);
     line-height: 1.666;
-    padding-left:.666em;
-    padding-right:.666em;
-    padding-top:.1875em;
-    padding-bottom:.1875em;
+    padding-left: 0.666em;
+    padding-right: 0.666em;
+    padding-top: 0.1875em;
+    padding-bottom: 0.1875em;
     margin: 0 0;
     display: inline;
+
     &--nocolor {
         background-color: $body-font-color;
     }
+
     + div {
-        margin-top:2em;
+        margin-top: 2em;
     }
 }
 
@@ -177,35 +185,37 @@
     line-height: 1.4;
     font-weight: $global-weight-bold;
     max-width: 30em !important;
-    font-size:1.125em;
-    color:#fff;
+    font-size: 1.125em;
+    color: #fff;
     text-shadow: 0 0 1rem rgba(#000, 0.75);
-    margin:1em 0 2em;
+    margin: 1em 0 2em;
 }
 
 .hero__addition {
-    font-size:1.125em;
+    font-size: 1.125em;
     text-shadow: 0 0 1rem rgba(#000, 0.75);
     text-transform: uppercase;
-    color:$primary-color;
+    color: $primary-color;
     font-weight: $global-weight-bold;
-    margin:1.25rem 0 0 0;
+    margin: 1.25rem 0 0 0;
+
     a {
         display: inline-block;
-        transition: all .2s ease;
-        padding:.5em 1em;
-        color:#fff;
+        transition: all 0.2s ease;
+        padding: 0.5em 1em;
+        color: #fff;
         text-shadow: none;
-        background-color: get-color('secondary');
-        &:hover, &:focus {
+        background-color: get-color("secondary");
+
+        &:hover,
+        &:focus {
             text-decoration: none;
             color: $white;
             background-color: $primary-color;
-            //transform: translateX(.333rem);
         }
 
         &.primary {
-            background-color: get-color('primary');
+            background-color: get-color("primary");
         }
     }
 }
@@ -213,28 +223,28 @@
 .hero__calloutcontainer {
     position: relative;
     background-color: $white;
+
     @include breakpoint(tablet) {
         z-index: 3;
         pointer-events: none;
         background-color: transparent;
         position: absolute;
         top: 50%;
-        left:0;
-        width:100%;
+        left: 0;
+        width: 100%;
         transform: translateY(-50%);
     }
 }
 
 .hero__bottomcontainer {
     position: relative;
-    //margin-bottom: calc(4rem + 4vw);
-    //background-color: $dark-gray;
+
     @include breakpoint(tablet) {
         background-color: transparent;
         position: absolute;
-        bottom:0;
-        left:0;
-        width:100%;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 }
 
@@ -242,75 +252,67 @@
     text-transform: uppercase;
     font-weight: $global-weight-bold;
     line-height: 1.2;
-    margin:0;
+    margin: 0;
     padding: 1.125em 0;
     text-shadow: 0 0 1rem rgba(#000, 0.75);
-    @include breakpoint(tablet) {
-        //font-size: 1.125rem;
-    }
+
     em {
         font-style: normal;
-        font-size:.666em;
+        font-size: 0.666em;
         font-weight: $global-weight-bold;
     }
 }
+
 .hero__callout {
     pointer-events: all;
     color: $body-font-color;
-    background-color: rgba(#fff, .95);
+    background-color: rgba(#fff, 0.95);
     padding: 1.5rem 1.5rem;
-    //text-align: center;
     max-width: 22rem;
-    margin:0 auto;
-    font-size:1.125rem;
+    margin: 0 auto;
+    font-size: 1.125rem;
     font-weight: $global-weight-bold;
 
-    //border:1px solid $light-gray;
-    //margin-bottom: 2rem;
-
     @include breakpoint(tablet) {
-
-
-        margin:0 0 0 auto;
-        //mix-blend-mode: multiply;
-
-        //max-width: 28rem;
-        //margin-bottom:0;
-    }
-    @include breakpoint(large) {
-        //padding-top: 20%;
-        //padding-bottom: 3rem;
+        margin: 0 0 0 auto;
     }
 
     .updated {
         font-size: 1.125rem;
-        //font-weight: $global-weight-bold;
     }
+
     .button {
         margin: 0;
-        text-transform:uppercase;
+        text-transform: uppercase;
     }
+
     .accent {
-        font-size:1.25em;
+        font-size: 1.25em;
     }
+
     .small {
-        font-size:.75em;
+        font-size: 0.75em;
     }
+
     p {
-        line-height:1.2;
+        line-height: 1.2;
+
         &:last-child() {
-            margin-bottom:0;
+            margin-bottom: 0;
         }
     }
 }
+
 .callout__title {
     text-transform: uppercase;
-    font-size:1.75rem;
-    letter-spacing: .125em;
+    font-size: 1.75rem;
+    letter-spacing: 0.125em;
 }
+
 .hero__callout__footer {
     font-size: 0.875rem;
     margin-top: 1rem;
+
     p {
         margin: 0;
     }
@@ -319,7 +321,6 @@
 .hero__callout__head {
     margin-bottom: 1rem;
 }
-
 
 /* Stílusvariáció az original site alapján */
 .originalsite {
@@ -331,12 +332,15 @@
         @include breakpoint(tablet) {
             height: 36rem;
         }
+
         @include breakpoint(large) {
             height: 33rem;
         }
+
         @include breakpoint(xlarge) {
             height: 33rem;
         }
+
         @include breakpoint(xxlarge) {
             height: 33rem;
         }

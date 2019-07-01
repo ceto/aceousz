@@ -1,27 +1,27 @@
 .usernavpane {
-    padding:0
+    padding: 0;
     //background-color: $primary-color;
     //color:$white;
 }
 
 .usernavpane__menu {
-
-    list-style:none;
-    line-height:1.2;
+    list-style: none;
+    line-height: 1.2;
     margin: 0;
     padding: 1rem 0;
-    font-size:.875rem;
+    font-size: 0.875rem;
     //font-weight: $global-weight-bold;
     //color:$dark-gray;
     > li {
         a {
             display: inline-block;
-            padding:.25em 1em;
-            color:inherit;
-            &:hover, &:focus {
-                color:$primary-color;
+            padding: 0.25em 1em;
+            color: inherit;
+
+            &:hover,
+            &:focus {
+                color: $primary-color;
             }
         }
     }
-
 }

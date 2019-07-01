@@ -1,38 +1,40 @@
-.sitefooter{
-    border-top: .75rem solid $primary-color;
+.sitefooter {
+    border-top: 0.75rem solid $primary-color;
     background-color: $light-gray;
-    padding-top:2rem;
-    padding-bottom:2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
     h3 {
-        color:$primary-color;
-        font-size:1.125rem;
-        margin:0 0 .5em;
+        color: $primary-color;
+        font-size: 1.125rem;
+        margin: 0 0 0.5em;
     }
 }
 
 .sitefooter__logo {
     display: inline-block;
-    width:9rem;
+    width: 9rem;
     max-width: 50vw;
 }
 
-
 .sitefooter__menu {
     list-style: none;
-    margin-left:0;
-    font-size:.875rem;
+    margin-left: 0;
+    font-size: 0.875rem;
+
     > li {
-        margin-bottom: .25em;
+        margin-bottom: 0.25em;
     }
+
     a {
-        color:inherit;
-        &:hover, &:focus {
-            color:$primary-color;
+        color: inherit;
+
+        &:hover,
+        &:focus {
+            color: $primary-color;
         }
     }
 }
-
 
 .sitefooter__socialmenu {
     // width:9rem;
@@ -41,11 +43,13 @@
     display: flex;
     //justify-items: center;
     //justify-content: center;
-    margin:1rem 0 1rem;
+    margin: 1rem 0 1rem;
+
     > li {
         width: 1.5rem;
         display: block;
-        margin-right: .25rem;
+        margin-right: 0.25rem;
+
         img {
             width: inherit;
         }

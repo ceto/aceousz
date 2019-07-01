@@ -1,14 +1,15 @@
 html {
     overflow-x: hidden;
+
     @media screen and (min-width: 110em) {
         font-size: 105.625%;
-        //font-size: 112.5%;
     }
 
     @media screen and (min-width: 128em) {
         font-size: 112.5%;
     }
 }
+
 body {
     position: relative;
     overflow-x: hidden;
@@ -20,19 +21,24 @@ body {
     background-attachment: fixed;
     padding: 4rem 0;
 }
+
 .main--nopad {
-    padding:0;
+    padding: 0;
 }
 
-.button {
+/* Framework styles overrides/extends */
+.lead,
+p.lead {
     font-weight: $global-weight-bold;
 }
-table {
-    font-size:.875rem;
-    .button {
-        margin:.25em 0;
-        & + button {
 
+table {
+    font-size: 0.875rem;
+
+    .button {
+        margin: 0.25em 0;
+
+        & + button {
         }
     }
 
@@ -49,40 +55,37 @@ table.lastcolcenter {
         width: min-content;
     }
 }
+
 table.lastcolright {
     td:last-child() {
         text-align: right;
     }
 }
 
-
-.breadcrumbwrapper {
-    border-bottom:1px solid $light-gray;
-    //background-color: $xlight-gray;
-    padding:.5rem 0;
-}
-
 .button {
-    //position: relative;
+    font-weight: $global-weight-bold;
+
     img {
         width: 1em;
-        margin-right:.5em;
-        //position: relative;
-        //left:-.5em;
-        //top:-.125em;
+        margin-right: 0.5em;
     }
+}
+
+.breadcrumbwrapper {
+    border-bottom: 1px solid $light-gray;
+    padding: 0.5rem 0;
 }
 
 /* Stílusvariáció az original site alapján */
 .originalsite {
-
     html {
         overflow-x: hidden;
+
         @media screen and (min-width: 110em) {
             font-size: 100%;
             //font-size: 112.5%;
         }
-    
+
         @media screen and (min-width: 128em) {
             font-size: 100%;
         }

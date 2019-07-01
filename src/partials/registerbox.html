@@ -1,56 +1,58 @@
 <aside class="loginbox">
-        <h3 class="loginbox__title">Regisztráció</h3>
-        <a href="#" class="button fb small expanded"><img src="{{roots}}assets/img/facebook.svg">Regisztrácó Facebook fiókkal</a>
-        <p class="has-lines">vagy</p>
-        <a href="#" class="button google small expanded"><img src="{{roots}}assets/img/google.svg">Regisztráció Google fiókkal</a>
-        <p class="has-lines">vagy</p>
-        <form data-abide novalidate>
-          <div class="grid-x grid-margin-x small-up-2">
-              <div class="cell">
-                  <label
-                      >Vezetéknév
-                      <input type="text" required placeholder="Kovács" />
-                  </label>
-                  </div>
-                  <div class="cell">
-                  <label
-                      >Keresztnév
-                      <input type="text" required placeholder="István" />
-                  </label>
-              </div>
-           </div>
-          <div class="grid-x grid-margin-x">
-            <div class="cell">
-              <label
-                >E-mail
-                <input type="text" required placeholder="Add meg e-mail címedet" />
-              </label>
-            </div>
-          </div>
-          <div class="grid-x grid-margin-x small-up-2">
-            <div class="cell">
-              <label
-                >Jelszó
-                <input type="password" required placeholder="Add meg jelszavadat" />
-              </label>
-            </div>
-            <div class="cell">
-              <label
-                >Jelszó mégegyszer
-                <input type="password" required placeholder="Add meg jelszavadat" />
-              </label>
-            </div>
-          </div>
-          <label for=""><input type="checkbox" required>Elfogadom az adatkezelési irányelveket</label>
-          <div class="grid-x grid-margin-x">
-            <div class="cell">
-              <button class="button expanded secondary" type="submit" value="Submit">Regisztráció elküldése</button>
-            </div>
-          </div>
-        </form>
-        <p class="text-center">
-          <label>Már korábban regisztráltál? <a href="{{ root }}login.html">Jelentkezz be itt</a></label
-          >
-        </p>
+  <h3 class="loginbox__title">Regisztráció</h3>
+  <a href="#" class="button fb small expanded"
+    ><img src="{{ roots }}assets/img/facebook.svg" />Regisztrácó Facebook fiókkal</a
+  >
+  <p class="has-lines">vagy</p>
+  <a href="#" class="button google small expanded"
+    ><img src="{{ roots }}assets/img/google.svg" />Regisztráció Google fiókkal</a
+  >
+  <p class="has-lines">vagy</p>
+  <form data-abide novalidate>
+    <div class="grid-x grid-margin-x small-up-2">
+      <div class="cell">
+        <label
+          >Vezetéknév
+          <input type="text" required placeholder="Kovács" />
         </label>
-      </aside>
+      </div>
+      <div class="cell">
+        <label
+          >Keresztnév
+          <input type="text" required placeholder="István" />
+        </label>
+      </div>
+    </div>
+    <div class="grid-x grid-margin-x">
+      <div class="cell">
+        <label
+          >E-mail
+          <input type="text" required placeholder="Add meg e-mail címedet" />
+        </label>
+      </div>
+    </div>
+    <div class="grid-x grid-margin-x small-up-2">
+      <div class="cell">
+        <label
+          >Jelszó
+          <input type="password" required placeholder="Add meg jelszavadat" />
+        </label>
+      </div>
+      <div class="cell">
+        <label
+          >Jelszó mégegyszer
+          <input type="password" required placeholder="Add meg jelszavadat" />
+        </label>
+      </div>
+    </div>
+    <label for=""><input type="checkbox" required />Elfogadom az adatkezelési irányelveket</label>
+    <div class="grid-x grid-margin-x">
+      <div class="cell">
+        <button class="button expanded secondary" type="submit" value="Submit">Regisztráció elküldése</button>
+      </div>
+    </div>
+  </form>
+  <p class="text-center">
+    <label>Már korábban regisztráltál? <a href="{{ root }}login.html">Jelentkezz be itt</a></label>
+  </p>
+</aside>

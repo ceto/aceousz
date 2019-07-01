@@ -1,26 +1,22 @@
 .bannerwrap {
     background-color: #fff;
-    border-bottom:1px solid $light-gray;
+    border-bottom: 1px solid $light-gray;
 }
 
 .banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom:.333rem;
-    padding-top:0;
-
-    //padding-top:.75rem;
-    //padding-bottom:.75rem;
+    padding-bottom: 0.333rem;
+    padding-top: 0;
 }
-
 
 .banner__logosection {
     flex-shrink: 1;
-    //padding-right:1rem;
     align-self: flex-end;
     display: none;
-    @include breakpoint('medium') {
+
+    @include breakpoint("medium") {
         display: block;
     }
 }
@@ -29,147 +25,166 @@
     width: 7.333rem;
     max-width: 20vw;
     display: inline-block;
-    margin:0 1rem 0 0;
+    margin: 0 1rem 0 0;
 }
+
 .banner__controls {
     flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
 }
+
 .banner__mobilemenu {
     display: none;
+
     a {
-        margin:0;
+        margin: 0;
+
         @include hamburger();
     }
 }
+
 .banner__helpers {
-    //margin-left:auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width:100%;
+    width: 100%;
 }
 
 .banner__clientblock {
     select {
-        font-size:.875rem;
+        font-size: 0.875rem;
         margin: 0;
-        padding-top:.333em;
-        padding-bottom:.333em;
-        height:auto;
-        margin:.333em 0 0;
+        padding-top: 0.333em;
+        padding-bottom: 0.333em;
+        height: auto;
+        margin: 0.333em 0 0;
         //border-bottom-width: 0;
 
         //background-color: $light-gray;
-
     }
 }
-
 
 .banner__helpermenu {
     display: flex;
     align-items: center;
     list-style: none;
-    font-size:.875rem;
+    font-size: 0.875rem;
     line-height: 1;
     font-weight: $global-weight-bold;
     text-transform: uppercase;
-    margin:0 0;
-    padding:0;
+    margin: 0 0;
+    padding: 0;
+
     > li {
-        padding: .5em;
+        padding: 0.5em;
+
         &:last-child() {
-            padding-right:0;
+            padding-right: 0;
         }
+
         a {
             display: inline-block;
-            color:inherit;
-            padding:.333em 0 .25em;
-            &:hover, &:focus {
-                color:$primary-color;
+            color: inherit;
+            padding: 0.333em 0 0.25em;
+
+            &:hover,
+            &:focus {
+                color: $primary-color;
             }
+
             &.accent {
                 text-transform: none;
                 background-color: $body-font-color;
-                color:$primary-color;
-                padding:.5em .75rem .5em !important;
+                color: $primary-color;
+                padding: 0.5em 0.75rem 0.5em !important;
                 border-radius: 1.25em;
-                &:hover, &:focus {
+
+                &:hover,
+                &:focus {
                     background-color: $primary-color;
                     color: $body-font-color;
                 }
             }
         }
     }
-    >li.is-active {
+
+    > li.is-active {
         a {
-            color:$primary-color;
+            color: $primary-color;
         }
     }
 }
+
 .banner__mainnav {
     position: relative;
     z-index: 1;
-    width:100%;
-    margin:0 0;
+    width: 100%;
+    margin: 0 0;
     background-color: $primary-color;
-    &:after {
+
+    &::after {
         position: absolute;
-        z-index:-1;
-        content: '';
+        z-index: -1;
+        content: "";
         display: block;
         background-color: inherit;
-        left:50%;
-        top:0;
-        height:100%;
-        width:50vw;
+        left: 50%;
+        top: 0;
+        height: 100%;
+        width: 50vw;
     }
 }
 
 /* Stílusvariáció az original site alapján */
 .originalsite {
-
     .banner {
-        padding-bottom:.5rem;
-        padding-top:.875rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.875rem;
     }
+
     .banner__logosection {
         display: block;
-        @include breakpoint('medium') {
+
+        @include breakpoint("medium") {
             display: block;
         }
     }
+
     .banner__logo {
         width: 9.5rem;
-        margin:0 .5rem .125rem 0;
+        margin: 0 0.5rem 0.125rem 0;
     }
+
     .banner__controls {
         display: none;
 
-        @include breakpoint('tablet') {
+        @include breakpoint("tablet") {
             display: flex;
         }
     }
+
     .banner__mobilemenu {
         display: block;
-        @include breakpoint('tablet') {
+
+        @include breakpoint("tablet") {
             display: none;
         }
     }
 
     .banner__helpermenu {
-        margin-bottom:.5rem;
-        font-size:.8125rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.8125rem;
+
         > li {
             a {
-                //padding:0 .5em;
-                padding: 0 .666em;
-                &:hover, &:focus {
+                padding: 0 0.666em;
+
+                &:hover,
+                &:focus {
                     text-decoration: underline;
                 }
             }
         }
     }
-
 }

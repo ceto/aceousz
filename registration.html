@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ACE Telecom | Online ügyfélszolgálat</title>
     <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
   </head>
   <body class="originalsite">
     <div id="fb-root"></div>
@@ -31,7 +32,6 @@
               <li><a href="#">Viszonteladók</a></li>
               <li><a href="#">Partnerek</a></li>
               <li class="is-active"><a href="#">Ügyfélszolgálat</a></li>
-    
               <li><a href="#" class="accent">Segíthetünk?</a></li>
             </ul>
           </nav>
@@ -69,61 +69,64 @@
         <div class="grid-x grid-margin-x align-center">
           <div class="medium-8 large-5 cell">
             <aside class="loginbox">
-                    <h3 class="loginbox__title">Regisztráció</h3>
-                    <a href="#" class="button fb small expanded"><img src="assets/img/facebook.svg">Regisztrácó Facebook fiókkal</a>
-                    <p class="has-lines">vagy</p>
-                    <a href="#" class="button google small expanded"><img src="assets/img/google.svg">Regisztráció Google fiókkal</a>
-                    <p class="has-lines">vagy</p>
-                    <form data-abide novalidate>
-                      <div class="grid-x grid-margin-x small-up-2">
-                          <div class="cell">
-                              <label
-                                  >Vezetéknév
-                                  <input type="text" required placeholder="Kovács" />
-                              </label>
-                              </div>
-                              <div class="cell">
-                              <label
-                                  >Keresztnév
-                                  <input type="text" required placeholder="István" />
-                              </label>
-                          </div>
-                       </div>
-                      <div class="grid-x grid-margin-x">
-                        <div class="cell">
-                          <label
-                            >E-mail
-                            <input type="text" required placeholder="Add meg e-mail címedet" />
-                          </label>
-                        </div>
-                      </div>
-                      <div class="grid-x grid-margin-x small-up-2">
-                        <div class="cell">
-                          <label
-                            >Jelszó
-                            <input type="password" required placeholder="Add meg jelszavadat" />
-                          </label>
-                        </div>
-                        <div class="cell">
-                          <label
-                            >Jelszó mégegyszer
-                            <input type="password" required placeholder="Add meg jelszavadat" />
-                          </label>
-                        </div>
-                      </div>
-                      <label for=""><input type="checkbox" required>Elfogadom az adatkezelési irányelveket</label>
-                      <div class="grid-x grid-margin-x">
-                        <div class="cell">
-                          <button class="button expanded secondary" type="submit" value="Submit">Regisztráció elküldése</button>
-                        </div>
-                      </div>
-                    </form>
-                    <p class="text-center">
-                      <label>Már korábban regisztráltál? <a href="login.html">Jelentkezz be itt</a></label
-                      >
-                    </p>
+              <h3 class="loginbox__title">Regisztráció</h3>
+              <a href="#" class="button fb small expanded"
+                ><img src="assets/img/facebook.svg" />Regisztrácó Facebook fiókkal</a
+              >
+              <p class="has-lines">vagy</p>
+              <a href="#" class="button google small expanded"
+                ><img src="assets/img/google.svg" />Regisztráció Google fiókkal</a
+              >
+              <p class="has-lines">vagy</p>
+              <form data-abide novalidate>
+                <div class="grid-x grid-margin-x small-up-2">
+                  <div class="cell">
+                    <label
+                      >Vezetéknév
+                      <input type="text" required placeholder="Kovács" />
                     </label>
-                  </aside>    </div>
+                  </div>
+                  <div class="cell">
+                    <label
+                      >Keresztnév
+                      <input type="text" required placeholder="István" />
+                    </label>
+                  </div>
+                </div>
+                <div class="grid-x grid-margin-x">
+                  <div class="cell">
+                    <label
+                      >E-mail
+                      <input type="text" required placeholder="Add meg e-mail címedet" />
+                    </label>
+                  </div>
+                </div>
+                <div class="grid-x grid-margin-x small-up-2">
+                  <div class="cell">
+                    <label
+                      >Jelszó
+                      <input type="password" required placeholder="Add meg jelszavadat" />
+                    </label>
+                  </div>
+                  <div class="cell">
+                    <label
+                      >Jelszó mégegyszer
+                      <input type="password" required placeholder="Add meg jelszavadat" />
+                    </label>
+                  </div>
+                </div>
+                <label for=""><input type="checkbox" required />Elfogadom az adatkezelési irányelveket</label>
+                <div class="grid-x grid-margin-x">
+                  <div class="cell">
+                    <button class="button expanded secondary" type="submit" value="Submit">Regisztráció elküldése</button>
+                  </div>
+                </div>
+              </form>
+              <p class="text-center">
+                <label>Már korábban regisztráltál? <a href="login.html">Jelentkezz be itt</a></label>
+              </p>
+            </aside>
+          </div>
         </div>
       </div>
       
@@ -190,6 +193,7 @@
             <ol class="sitemap">
               <li><a href="index.html">Home Original</a></li>
               <li><a href="index-normal.html">Home Normal</a></li>
+              <li><a href="index-normal-with-sideloginbox.html">Home with Side Loginbox</a></li>
               <li><a href="dashboard.html">Dashboard</a></li>
               <li><a href="login.html">Login Original</a></li>
               <li><a href="registration.html">Registration Original</a></li>

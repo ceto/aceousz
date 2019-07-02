@@ -1,5 +1,6 @@
 .hero {
     position: relative;
+    z-index: 0;
     width: 100%;
     color: $primary-color;
     background-color: lighten(#000, 80%);

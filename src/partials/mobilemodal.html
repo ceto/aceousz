@@ -1,11 +1,33 @@
 <div class="reveal full mobilemodal" id="mobilemodal" data-reveal>
-  <ul class="mobilemodal__menu">
+  <ul class="vertical menu accordion-menu mobilemodal__menu" data-accordion-menu>
+    {{#if loggedin}}
+    <li><a href="{{ root }}dashboard.html">Kezdőlap</a></li>
+    <li>
+      <a href="#">Szolgáltatások</a>
+      <ul class="menu">
+        <li><a href="{{ root }}email-accounts.html">E-mail beállítások</a></li>
+        <li><a href="{{ root }}voip-log.html">Voip számlarészletező</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Fiók kezelése</a>
+      <!-- <ul class="menu">
+        <li><a href="#">Fiók kezelése</a></li>
+        <li><a href="#">Előfizető hozzárendelés</a></li>
+        <li><a href="#">Lorem ipsum</a></li>
+        <li><a href="#">Kijelentkezés</a></li>
+      </ul> -->
+    </li>
+    <li><a href="#">Kijelentkezés</a></li>
+    <li><a href="#" class="accent">Segíthetünk?</a></li>
+    {{else}}
     <li><a href="#">Vállalati</a></li>
     <li><a href="#">Lakossági</a></li>
     <li><a href="#">Viszonteladók</a></li>
     <li><a href="#">Partnerek</a></li>
     <li class="is-active"><a href="#">Ügyfélszolgálat</a></li>
     <li><a href="#" class="accent">Segíthetünk?</a></li>
+    {{/if}}
   </ul>
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">x</span>

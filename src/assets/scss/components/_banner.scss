@@ -14,18 +14,17 @@
 .banner__logosection {
     flex-shrink: 1;
     align-self: flex-end;
-    display: none;
-
-    @include breakpoint("medium") {
-        display: block;
-    }
 }
 
 .banner__logo {
     width: 7.333rem;
-    max-width: 20vw;
+    max-width: 18vw;
     display: inline-block;
-    margin: 0 1rem 0 0;
+    margin: 0.5rem 1rem 0 0;
+
+    @include breakpoint("tablet") {
+        max-width: 20vw;
+    }
 }
 
 .banner__controls {
@@ -35,10 +34,13 @@
 }
 
 .banner__mobilemenu {
-    display: none;
     background-color: $primary-color;
     padding: 0.5rem 0 0.25rem;
     position: relative;
+
+    @include breakpoint("tablet") {
+        display: none;
+    }
 
     &::before {
         position: absolute;
@@ -51,8 +53,6 @@
     }
 
     a {
-        //margin: 0;
-
         @include hamburger($body-font-color, #000, 32px, 20px, 4px, 3);
 
         vertical-align: top;
@@ -67,6 +67,12 @@
 }
 
 .banner__clientblock {
+    width: 90%;
+
+    @include breakpoint("tablet") {
+        width: auto;
+    }
+
     select {
         font-size: 0.875rem;
         margin: 0;
@@ -74,9 +80,6 @@
         padding-bottom: 0.333em;
         height: auto;
         margin: 0.333em 0 0;
-        //border-bottom-width: 0;
-
-        //background-color: $light-gray;
     }
 }
 
@@ -90,6 +93,11 @@
     text-transform: uppercase;
     margin: 0 0;
     padding: 0;
+    display: none;
+
+    @include breakpoint("tablet") {
+        display: flex;
+    }
 
     > li {
         padding: 0.5em;
@@ -137,6 +145,11 @@
     width: 100%;
     margin: 0 0;
     background-color: $primary-color;
+    display: none;
+
+    @include breakpoint("tablet") {
+        display: block;
+    }
 
     &::after {
         position: absolute;
@@ -158,14 +171,6 @@
         padding-top: 0.875rem;
     }
 
-    .banner__logosection {
-        display: block;
-
-        @include breakpoint("medium") {
-            display: block;
-        }
-    }
-
     .banner__logo {
         width: 9.5rem;
         margin: 0 0.5rem 0.125rem 0;
@@ -179,15 +184,8 @@
         }
     }
 
-    .banner__mobilemenu {
-        display: block;
-
-        @include breakpoint("tablet") {
-            display: none;
-        }
-    }
-
     .banner__helpermenu {
+        display: flex;
         margin-bottom: 0.5rem;
         font-size: 0.8125rem;
 
